@@ -1,0 +1,27 @@
+# managed by kynda-labs/dev-process issues/sync.sh — edit there, not here
+name: Experiment
+description: A question to answer by measurement. State the prediction before running.
+type: "Experiment"
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are we trying to find out?
+    validations: { required: true }
+  - type: textarea
+    id: prediction
+    attributes:
+      label: Prediction and gate
+      description: What result would confirm or refute it — decided before running (measure first; possible is not proven).
+    validations: { required: true }
+  - type: textarea
+    id: method
+    attributes:
+      label: Method
+      description: What will be run, on what, where results will be committed.
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+      description: Filled in after the run. Link the committed evidence.
