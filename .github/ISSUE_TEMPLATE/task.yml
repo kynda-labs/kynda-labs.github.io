@@ -1,0 +1,28 @@
+# managed by kynda-labs/dev-process issues/sync.sh — edit there, not here
+name: Task
+description: A piece of work to do — written so a human or an agent can pick it up cold.
+type: "Task"
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should be true when this is done, in one or two sentences.
+    validations: { required: true }
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why this matters and what someone needs to know first. Link specs, issues, PRs.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Checkable conditions. Prefer ones a test or command can verify (exit code, output).
+      placeholder: "- [ ] tests pass on the PR\n- [ ] ..."
+    validations: { required: true }
+  - type: textarea
+    id: out
+    attributes:
+      label: Out of scope
+      description: What this task deliberately does not cover.
